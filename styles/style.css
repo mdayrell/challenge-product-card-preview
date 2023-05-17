@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+/* ### Primary */
+
+/* dark-cyan */
+ --button-color: hsl(158, 36%, 37%);
+/* cream */
+ --main-background: hsl(30, 38%, 92%);
+
+/* ### Neutral */
+
+/* Very dark blue */
+--second-title-color : hsl(212, 21%, 14%);
+/* Dark grayish blue  */
+--first-title-subtitle-price-color: hsl(228, 12%, 48%);
+/* white */
+--card-background: hsl(0, 0%, 100%);
+
+  /* Fonts */
+--second-title-font: 'Fraunces', serif;
+--first-font: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__content {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    height: 45%;
+    width: 30%;
+}
+
+.card__content__right {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 50%;
+}
+
+.card__content__right__first__title {
+    font-family: var(--first-font);
+    color: var(--first-title-subtitle-price-color);
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+    font-weight: lighter;
+}
+
+.card__content__right__second__title {
+    font-family: var(--second-title-font);
+    color: var(--second-title-color);
+    font-size: 2rem;
+    word-spacing: 3%;
+}
+
+.card__content__right__subtitle {
+    font-family: var(--first-font);
+    color: var(--first-title-subtitle-price-color);
+    font-size: 0.8rem;
+    line-height: 160%;
+}
+
+.card__content__left {
+    width: 50%;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-blend-mode: multiply;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+.first__price {
+    font-family: var(--second-title-font);
+    color: var(--button-color);
+    font-size: 2rem;;
+}
+
+.second__price {
+    font-family: var(--first-font);
+    color: var(--first-title-subtitle-price-color);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+
+.button__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: 12%;
+    background-color: var(--button-color);
+    font-family: var(--first-font);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media(max-width: 1477px) {
+    .card__content {
+        height: 60%;
+        width: 25%;
+        flex-direction: column-reverse;
+    }
+
+    .card__content__right {
+        width: 100%;
+        height: 60%;
+    }
+
+    .card__content__right__subtitle {
+        font-size: 0.95rem;
+    }
+
+    .card__content__left {
+        background-image: url('../images/image-product-mobile.jpg');
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
