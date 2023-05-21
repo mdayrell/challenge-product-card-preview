@@ -52,8 +52,10 @@ body {
 }
 
 .card__content__image {
-    display: block;
-    max-width: 100%;
+    background-image: url('/images/image-product-mobile.jpg');
+    height: 35vh;
+    width: auto;
+    background-size: 100% 100%;
 }
   
 .card__content {
@@ -119,5 +121,17 @@ body {
 @media (min-width: 600px) {
     .card {
         display: flex;
+    }
+
+    .card__content {
+        max-width: 300px;
+    }
+
+    .card__content__image {
+        width: 300px;
+        height: auto;
+        background-image: url('/images/image-product-desktop.jpg');
+        background-size: 100% 100%;
+        background-blend-mode: multiply;
     }
 }
