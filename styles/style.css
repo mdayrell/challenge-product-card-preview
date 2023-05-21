@@ -52,7 +52,7 @@ body {
 }
 
 .card__content__image {
-    background-image: url('/images/image-product-mobile.jpg');
+    background-image: url('../images/image-product-mobile.jpg');
     height: 35vh;
     width: auto;
     background-size: 100% 100%;
@@ -130,7 +130,7 @@ body {
     .card__content__image {
         width: 300px;
         height: auto;
-        background-image: url('/images/image-product-desktop.jpg');
+        background-image: url('../images/image-product-desktop.jpg');
         background-size: 100% 100%;
         background-blend-mode: multiply;
     }
